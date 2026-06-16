@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "name": "Important"
+    },
+    {
+      "id": "b07161a6-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "name": "Super"
+    },
+    {
+      "id": "b07162f0-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "name": "Spangley"
+    }
+  ],
+  "notes": [
+    {
+      "id": "cbc787a0-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "name": "Dogs",
+      "modified": "2019-01-03T00:00:00.000Z",
+      "folder_id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "content": "Corporis accusamus placeat quas non voluptas. Harum fugit molestias qui."
+    },
+    {
+      "id": "d26e0034-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "name": "Cats",
+      "modified": "2018-08-15T23:00:00.000Z",
+      "folder_id": "b07161a6-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "content": "Eos laudantium quia ab blanditiis temporibus necessitatibus."
+    },
+    {
+      "id": "d26e0980-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "name": "Tigers",
+      "modified": "2018-03-03T00:00:00.000Z",
+      "folder_id": "b07162f0-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "content": "Eaque aliquid sit. Ducimus consequatur nam."
+    },
+    {
+      "name": "Gerbils",
+      "modified": "2026-06-16T05:43:02.672Z",
+      "folder_id": "b0715efe-ffaf-11e8-8eb2-f2801f1b9fd1",
+      "content": "Cute",
+      "id": "rM4p7c7_bkI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

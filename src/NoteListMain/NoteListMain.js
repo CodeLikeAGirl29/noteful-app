@@ -1,0 +1,38 @@
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Note from "../Note/Note";
+import CircleButton from "../CircleButton/CircleButton";
+import NoteContext from "../NoteContext";
+import { getNotesForFolder } from "../notes-helpers";
+import "./NoteListMain.css";
+
+export default function NoteListMain(props) {
+  const { notes = [] } = useContext(NoteContext);
+  const { folderId } = props.match.params;
+  const notesForFolder = getNotesForFolder(notes, folderId);
+
+  return (
+    <section className="NoteListMain">
+      <ul>
+        {notesForFolder.map((note) => (
+          <li key={note.id}>
+            <Note id={note.id} name={note.name} modified={note.modified} />
+          </li>
+        ))}
+      </ul>
+      <div className="NoteListMain__button-container">
+        <CircleButton
+          tag={Link}
+          to="/add-note"
+          type="button"
+          className="NoteListMain__add-note-button"
+        >
+          <FontAwesomeIcon icon="plus" />
+          <br />
+          Note
+        </CircleButton>
+      </div>
+    </section>
+  );
+}
